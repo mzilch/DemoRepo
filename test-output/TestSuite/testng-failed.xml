@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <test name="Testing Parallel(failed)">
+    <classes>
+      <class name="Javalicious.TestConversion">
+        <methods>
+          <include name="Before"/>
+          <include name="TestCase35"/>
+          <include name="After"/>
+        </methods>
+      </class> <!-- Javalicious.TestConversion -->
+    </classes>
+  </test> <!-- Testing Parallel(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

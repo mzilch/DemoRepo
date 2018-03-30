@@ -24,9 +24,9 @@ public class TestBase {
     @Parameters(value={"browser"})
     public void setupTest (String browser) throws MalformedURLException {
         //Set DesiredCapabilities
-        //DesiredCapabilities capabilities = new DesiredCapabilities();        
+        DesiredCapabilities capabilities = new DesiredCapabilities();        
         //Firefox Profile Settings
-        /*if (browser=="firefox") {
+        if (browser=="firefox") {
             FirefoxProfile profile = new FirefoxProfile();
             //Accept Untrusted Certificates
             profile.setAcceptUntrustedCertificates(true);
@@ -35,17 +35,17 @@ public class TestBase {
             profile.setPreference("network.proxy.type", 0);
             //Set Firefox profile to capabilities
             capabilities.setCapability(FirefoxDriver.PROFILE, profile);
-        }*/
+        }
     	
     	
 		//DOCTOR
-		DesiredCapabilities caps = new DesiredCapabilities();
+/*		DesiredCapabilities caps = new DesiredCapabilities();
 		//Set BrowserName
 		//caps.setCapability("browserName", browser);
         caps.setCapability(CapabilityType.VERSION, "");
         caps.setCapability(CapabilityType.PLATFORM, "LINUX");
         //Set Browser to ThreadLocalMap
-        driver.set(new RemoteWebDriver(new URL("http://192.168.99.100:4446/wd/hub"), caps));
+        driver.set(new RemoteWebDriver(new URL("http://192.168.99.100:4446/wd/hub"), caps));*/
         
         
         //Set BrowserName

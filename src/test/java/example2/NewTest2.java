@@ -13,9 +13,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;		
 import org.testng.annotations.Test;	
 import org.testng.annotations.BeforeTest;	
@@ -24,8 +26,11 @@ import org.testng.annotations.AfterTest;
 public class NewTest2 {		
 	    //static WebDriver driver;	
 	    private boolean result;
-	    private WebDriver driver;
-		@Test				
+	    public WebDriver driver;
+	    public Actions builder;
+	    public WebDriverWait wait;
+		
+	    @Test				
 		public void test() throws Exception {	
 			
 			
@@ -58,20 +63,12 @@ public class NewTest2 {
 		public void beforeTest() throws Exception {	
 			
 			//LOCAL - FIREFOX
-/*		   DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-		   capabilities.setCapability("marionette", false);
-		   capabilities.setCapability("firefox_binary", new File("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe").getAbsolutePath());
-		   driver = new FirefoxDriver(capabilities);*/
-			driver = new FirefoxDriver();
-		   //DOCKER - CHROME
-/*			DesiredCapabilities caps = DesiredCapabilities.chrome();
-            caps.setCapability(CapabilityType.VERSION, "");
-            caps.setCapability(CapabilityType.PLATFORM, "LINUX");
-            driver = new RemoteWebDriver(new URL("http://192.168.99.100:4446/wd/hub"),  caps);*/
-            
-            driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		       driver = new FirefoxDriver();
+		       driver.manage().window().maximize();
+		       driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		       driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		       builder = new Actions(driver);
+		       wait = new WebDriverWait(driver, 10);
 
 		}		
 		@AfterTest

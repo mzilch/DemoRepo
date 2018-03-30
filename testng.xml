@@ -1,9 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestSuite">
-  <test name="Testing">
-    <classes>
-      <class name="Javalicious.TestConversion"/>
+<!--
+<suite name="Parallel test suite" parallel="classes" thread-count="2"> 
+<suite name="Parallel test suite">
+<class name="Javalicious.TestConversion2"/> 
+<class name="Javalicious.TestConversion"/>  
+-->
+<suite name="Parallel test suite22"> 
+  <test name="Test 1st parallel">  
+  <parameter name="browserType" value="firefox"/>
+    <classes>      
+      <class name="Javalicious.TestConversion"/> 
+      <class name="Javalicious.TestConversion5678"/> 
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+</suite>
+

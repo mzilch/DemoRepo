@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="example2.XPathAssissant_JunitTest">
+      <class name="Javalicious.TestConversion">
         <methods>
-          <include name="test"/>
-          <include name="beforeTest"/>
+          <include name="TestCase302"/>
+          <include name="Before"/>
+          <include name="After"/>
         </methods>
-      </class> <!-- example2.XPathAssissant_JunitTest -->
+      </class> <!-- Javalicious.TestConversion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

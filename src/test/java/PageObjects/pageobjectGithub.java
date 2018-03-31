@@ -20,7 +20,7 @@ public class pageobjectGithub extends SeleniumHelper{
 	public pageobjectGithub(WebDriver driver) throws MalformedURLException{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-	}  
+	}
 
    //Locators --------------------------------------------------------------------------------------------------------------------------------------------------
    //L_1

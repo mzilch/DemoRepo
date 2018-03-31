@@ -70,7 +70,7 @@ public class TestCase435{
           }
           System.out.println("Passed: VERIFY PAGE: 'Humana for Insurance Brokers and Sales Agents is Displayed");
 
- 	//Test Step (1) - A_Link_V__Individuals & Families, A
+ 	//Test Step (1) - Verify Text - A_Link_V__Individuals & Families, A
           WebElement A_Link_V__IndividualsFamilies = driver.findElement(By.xpath("xpath_attr_name|//a[@name='https://www.humana.com/agent/products-and-services/individual-and-family/']"));
           wait.until(ExpectedConditions.visibilityOf(A_Link_V__IndividualsFamilies));
           Assert.assertTrue(A_Link_V__IndividualsFamilies.isDisplayed(),"Element should exist");
@@ -80,7 +80,7 @@ public class TestCase435{
           System.out.println("Passed: Text matched: ('Individuals & Families')");
           System.out.println("Passed: Test Step (1)");
 
- 	//Test Step (2) - A_Link_V__Individual Medicare, A
+ 	//Test Step (2) - Verify Text - A_Link_V__Individual Medicare, A
           WebElement A_Link_V__IndividualMedicare = driver.findElement(By.xpath("xpath_attr_name|//a[@name='https://www.humana.com/agent/products-and-services/individual-medicare/']"));
           wait.until(ExpectedConditions.visibilityOf(A_Link_V__IndividualMedicare));
           Assert.assertTrue(A_Link_V__IndividualMedicare.isDisplayed(),"Element should exist");
@@ -90,7 +90,7 @@ public class TestCase435{
           System.out.println("Passed: Text matched: ('Individual Medicare')");
           System.out.println("Passed: Test Step (2)");
 
- 	//Test Step (3) - A_Link_V__Group Insurance, A
+ 	//Test Step (3) - Verify Text - A_Link_V__Group Insurance, A
           WebElement A_Link_V__GroupInsurance = driver.findElement(By.xpath("xpath_attr_name|//a[@name='https://www.humana.com/agent/products-and-services/group-insurance/']"));
           wait.until(ExpectedConditions.visibilityOf(A_Link_V__GroupInsurance));
           Assert.assertTrue(A_Link_V__GroupInsurance.isDisplayed(),"Element should exist");
@@ -100,7 +100,7 @@ public class TestCase435{
           System.out.println("Passed: Text matched: ('Group Insurance')");
           System.out.println("Passed: Test Step (3)");
 
- 	//Test Step (4) - A_Link_V__Why Humana?, A
+ 	//Test Step (4) - Verify Text - A_Link_V__Why Humana?, A
           WebElement A_Link_V__WhyHumana = driver.findElement(By.xpath("xpath_attr_title|//a[@title='Why Humana?']"));
           wait.until(ExpectedConditions.visibilityOf(A_Link_V__WhyHumana));
           Assert.assertTrue(A_Link_V__WhyHumana.isDisplayed(),"Element should exist");
@@ -110,7 +110,7 @@ public class TestCase435{
           System.out.println("Passed: Text matched: ('Why Humana?')");
           System.out.println("Passed: Test Step (4)");
 
- 	//Test Step (5) - DIV_Text_V__Unique extras that will appeal to your clients, li, DIV
+ 	//Test Step (5) - Verify Text - DIV_Text_V__Unique extras that will appeal to your clients, li, DIV
           WebElement DIV_Text_V__Uniqueextrasthatwillappealtoyourclientsli = driver.findElement(By.xpath("xpath_attr_id|//div[@id='description-4']"));
           wait.until(ExpectedConditions.visibilityOf(DIV_Text_V__Uniqueextrasthatwillappealtoyourclientsli));
           Assert.assertTrue(DIV_Text_V__Uniqueextrasthatwillappealtoyourclientsli.isDisplayed(),"Element should exist");
@@ -120,27 +120,27 @@ public class TestCase435{
           System.out.println("Passed: Text matched: ('Unique extras that will appeal to your clients, like Go365')");
           System.out.println("Passed: Test Step (5)");
 
- 	//Test Step (6) - DIV_Text_V__We want our agents to succeed. That’s why we offer, DIV
+ 	//Test Step (6) - Verify Text - DIV_Text_V__We want our agents to succeed. Thatâ€™s why we offer, DIV
           WebElement DIV_Text_V__WewantouragentstosucceedThatswhyweoffer = driver.findElement(By.xpath("xpath_attr_id|//div[@id='description-3']"));
           wait.until(ExpectedConditions.visibilityOf(DIV_Text_V__WewantouragentstosucceedThatswhyweoffer));
           Assert.assertTrue(DIV_Text_V__WewantouragentstosucceedThatswhyweoffer.isDisplayed(),"Element should exist");
-          System.out.println("Passed: Element should exist: 'DIV_Text_V__WewantouragentstosucceedThat’swhyweoffer' = Is Displayed");
+          System.out.println("Passed: Element should exist: 'DIV_Text_V__WewantouragentstosucceedThatâ€™swhyweoffer' = Is Displayed");
           String stringValue_6 = DIV_Text_V__WewantouragentstosucceedThatswhyweoffer.getText().trim();
-          Assert.assertEquals("We want our agents to succeed. That’s why we offer powerful tools like Humana Vantage, the Marketing Resource Center plus unmatched support from people as driven as you." , stringValue_6);
-          System.out.println("Passed: Text matched: ('We want our agents to succeed. That’s why we offer powerful tools like Humana Vantage, the Marketing Resource Center plus unmatched support from people as driven as you.')");
+          Assert.assertEquals("We want our agents to succeed. Thatâ€™s why we offer powerful tools like Humana Vantage, the Marketing Resource Center plus unmatched support from people as driven as you." , stringValue_6);
+          System.out.println("Passed: Text matched: ('We want our agents to succeed. Thatâ€™s why we offer powerful tools like Humana Vantage, the Marketing Resource Center plus unmatched support from people as driven as you.')");
           System.out.println("Passed: Test Step (6)");
 
- 	//Test Step (7) - DIV_Text_V__Humana’s comprehensive suite of products and speci, DIV
+ 	//Test Step (7) - Verify Text - DIV_Text_V__Humanaâ€™s comprehensive suite of products and speci, DIV
           WebElement DIV_Text_V__Humanascomprehensivesuiteofproductsandspeci = driver.findElement(By.xpath("xpath_attr_id|//div[@id='description-2']"));
           wait.until(ExpectedConditions.visibilityOf(DIV_Text_V__Humanascomprehensivesuiteofproductsandspeci));
           Assert.assertTrue(DIV_Text_V__Humanascomprehensivesuiteofproductsandspeci.isDisplayed(),"Element should exist");
-          System.out.println("Passed: Element should exist: 'DIV_Text_V__Humana’scomprehensivesuiteofproductsandspeci' = Is Displayed");
+          System.out.println("Passed: Element should exist: 'DIV_Text_V__Humanaâ€™scomprehensivesuiteofproductsandspeci' = Is Displayed");
           String stringValue_7 = DIV_Text_V__Humanascomprehensivesuiteofproductsandspeci.getText().trim();
-          Assert.assertEquals("Humana’s comprehensive suite of products and specialty programs allows you to wow your clients with customized solutions that will help keep your sales pipeline full." , stringValue_7);
-          System.out.println("Passed: Text matched: ('Humana’s comprehensive suite of products and specialty programs allows you to wow your clients with customized solutions that will help keep your sales pipeline full.')");
+          Assert.assertEquals("Humanaâ€™s comprehensive suite of products and specialty programs allows you to wow your clients with customized solutions that will help keep your sales pipeline full." , stringValue_7);
+          System.out.println("Passed: Text matched: ('Humanaâ€™s comprehensive suite of products and specialty programs allows you to wow your clients with customized solutions that will help keep your sales pipeline full.')");
           System.out.println("Passed: Test Step (7)");
 
- 	//Test Step (8) - DIV_Text_V__Our focus on Medicare is second to none. At Humana, DIV
+ 	//Test Step (8) - Verify Text - DIV_Text_V__Our focus on Medicare is second to none. At Humana, DIV
           WebElement DIV_Text_V__OurfocusonMedicareissecondtononeAtHumana = driver.findElement(By.xpath("xpath_attr_id|//div[@id='description-1']"));
           wait.until(ExpectedConditions.visibilityOf(DIV_Text_V__OurfocusonMedicareissecondtononeAtHumana));
           Assert.assertTrue(DIV_Text_V__OurfocusonMedicareissecondtononeAtHumana.isDisplayed(),"Element should exist");
@@ -150,7 +150,7 @@ public class TestCase435{
           System.out.println("Passed: Text matched: ('Our focus on Medicare is second to none. At Humana we embrace this quickly growing segment of insurance and continually elevate our commitment to create more opportunities for you and your clients.')");
           System.out.println("Passed: Test Step (8)");
 
- 	//Test Step (9) - A_Link_V__Learn more about Medicare plans, A
+ 	//Test Step (9) - Verify Text - A_Link_V__Learn more about Medicare plans, A
           WebElement A_Link_V__LearnmoreaboutMedicareplans = driver.findElement(By.xpath("xpath_attr_name|//a[@name='https://www.humana.com/agent/products-and-services/individual-medicare/3']"));
           wait.until(ExpectedConditions.visibilityOf(A_Link_V__LearnmoreaboutMedicareplans));
           Assert.assertTrue(A_Link_V__LearnmoreaboutMedicareplans.isDisplayed(),"Element should exist");
@@ -160,7 +160,7 @@ public class TestCase435{
           System.out.println("Passed: Text matched: ('Learn more about Medicare plans')");
           System.out.println("Passed: Test Step (9)");
 
- 	//Test Step (10) - A_Link_V__Learn more about Individual and Family plans, A
+ 	//Test Step (10) - Verify Text - A_Link_V__Learn more about Individual and Family plans, A
           WebElement A_Link_V__LearnmoreaboutIndividualandFamilyplans = driver.findElement(By.xpath("xpath_attr_name|//a[@name='https://www.humana.com/agent/products-and-services/individual-and-family/2']"));
           wait.until(ExpectedConditions.visibilityOf(A_Link_V__LearnmoreaboutIndividualandFamilyplans));
           Assert.assertTrue(A_Link_V__LearnmoreaboutIndividualandFamilyplans.isDisplayed(),"Element should exist");
@@ -170,7 +170,7 @@ public class TestCase435{
           System.out.println("Passed: Text matched: ('Learn more about Individual and Family plans')");
           System.out.println("Passed: Test Step (10)");
 
- 	//Test Step (11) - A_Link_V__Learn more about Group Insurance Plans, A
+ 	//Test Step (11) - Verify Text - A_Link_V__Learn more about Group Insurance Plans, A
           WebElement A_Link_V__LearnmoreaboutGroupInsurancePlans = driver.findElement(By.xpath("xpath_attr_name|//a[@name='https://www.humana.com/agent/products-and-services/group-insurance/2']"));
           wait.until(ExpectedConditions.visibilityOf(A_Link_V__LearnmoreaboutGroupInsurancePlans));
           Assert.assertTrue(A_Link_V__LearnmoreaboutGroupInsurancePlans.isDisplayed(),"Element should exist");

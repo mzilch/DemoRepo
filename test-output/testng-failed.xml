@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Parallel test suite]" parallel="classes">
-  <test name="Test 1st parallel(failed)" parallel="classes">
-    <parameter name="browserType" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="Javalicious.TestConversion">
+      <class name="javalicious2.TestCase435">
         <methods>
-          <include name="initializeTestBaseSetup"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="After"/>
+          <include name="Before"/>
+          <include name="TestCase435"/>
         </methods>
-      </class> <!-- Javalicious.TestConversion -->
-      <class name="Javalicious.TestConversion5678">
-        <methods>
-          <include name="initializeTestBaseSetup"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="TestCase141"/>
-        </methods>
-      </class> <!-- Javalicious.TestConversion5678 -->
+      </class> <!-- javalicious2.TestCase435 -->
     </classes>
-  </test> <!-- Test 1st parallel(failed) -->
-</suite> <!-- Failed suite [Parallel test suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

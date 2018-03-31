@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class HumanaforInsuranceBrokersandSalesAgents extends SeleniumHelper{
+public class pageobjectGithub extends SeleniumHelper{
 
    //Properties
 	public WebDriver driver;
@@ -17,7 +17,7 @@ public class HumanaforInsuranceBrokersandSalesAgents extends SeleniumHelper{
 	public String PAGE_URL = "https://www.humana.com/agent/";
 
    //Constructor
-	public HumanaforInsuranceBrokersandSalesAgents(WebDriver driver) throws MalformedURLException{
+	public pageobjectGithub(WebDriver driver) throws MalformedURLException{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -90,7 +90,7 @@ public class HumanaforInsuranceBrokersandSalesAgents extends SeleniumHelper{
 	//Methods -------------------------------------------------------------------
 	public String getText_DIV_Text_V__Humanascomprehensivesuiteofproductsandspeci(){ return DIV_Text_V__Humanascomprehensivesuiteofproductsandspeci.getText();}
 
-   //L_11
+   //L_11  
 	@FindBy(how = How.XPATH, using = "//div[@id='description-1']")
 	public WebElement DIV_Text_V__OurfocusonMedicareissecondtononeAtHumana;
 	//Methods -------------------------------------------------------------------
@@ -108,6 +108,6 @@ public class HumanaforInsuranceBrokersandSalesAgents extends SeleniumHelper{
 		return getPageTitle();
 	}
 	public String getPageUrl(){
-		return getPageURL();
+		return getThisPageURL();
 	}
 }

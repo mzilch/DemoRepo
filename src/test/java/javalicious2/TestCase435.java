@@ -1,42 +1,19 @@
 package javalicious2;
 
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.Assert;
-import org.testng.SkipException;
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
-import java.net.MalformedURLException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.*;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.ElementNotVisibleException;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.interactions.internal.Coordinates;
-import org.openqa.selenium.internal.Locatable;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.StaleElementReferenceException;
 
-@SuppressWarnings("unused")
+//@SuppressWarnings("unused")
 
 //public class TestConversion{
 public class TestCase435{
@@ -120,24 +97,24 @@ public class TestCase435{
           System.out.println("Passed: Text matched: ('Unique extras that will appeal to your clients, like Go365')");
           System.out.println("Passed: Test Step (5)");
 
- 	//Test Step (6) - Verify Text - DIV_Text_V__We want our agents to succeed. Thatâ€™s why we offer, DIV
+ 	//Test Step (6) - Verify Text - DIV_Text_V__We want our agents to succeed. That’s why we offer, DIV
           WebElement DIV_Text_V__WewantouragentstosucceedThatswhyweoffer = driver.findElement(By.xpath("xpath_attr_id|//div[@id='description-3']"));
           wait.until(ExpectedConditions.visibilityOf(DIV_Text_V__WewantouragentstosucceedThatswhyweoffer));
           Assert.assertTrue(DIV_Text_V__WewantouragentstosucceedThatswhyweoffer.isDisplayed(),"Element should exist");
-          System.out.println("Passed: Element should exist: 'DIV_Text_V__WewantouragentstosucceedThatâ€™swhyweoffer' = Is Displayed");
+          System.out.println("Passed: Element should exist: 'DIV_Text_V__WewantouragentstosucceedThat’swhyweoffer' = Is Displayed");
           String stringValue_6 = DIV_Text_V__WewantouragentstosucceedThatswhyweoffer.getText().trim();
-          Assert.assertEquals("We want our agents to succeed. Thatâ€™s why we offer powerful tools like Humana Vantage, the Marketing Resource Center plus unmatched support from people as driven as you." , stringValue_6);
-          System.out.println("Passed: Text matched: ('We want our agents to succeed. Thatâ€™s why we offer powerful tools like Humana Vantage, the Marketing Resource Center plus unmatched support from people as driven as you.')");
+          Assert.assertEquals("We want our agents to succeed. That’s why we offer powerful tools like Humana Vantage, the Marketing Resource Center plus unmatched support from people as driven as you." , stringValue_6);
+          System.out.println("Passed: Text matched: ('We want our agents to succeed. That’s why we offer powerful tools like Humana Vantage, the Marketing Resource Center plus unmatched support from people as driven as you.')");
           System.out.println("Passed: Test Step (6)");
 
- 	//Test Step (7) - Verify Text - DIV_Text_V__Humanaâ€™s comprehensive suite of products and speci, DIV
+ 	//Test Step (7) - Verify Text - DIV_Text_V__Humana’s comprehensive suite of products and speci, DIV
           WebElement DIV_Text_V__Humanascomprehensivesuiteofproductsandspeci = driver.findElement(By.xpath("xpath_attr_id|//div[@id='description-2']"));
           wait.until(ExpectedConditions.visibilityOf(DIV_Text_V__Humanascomprehensivesuiteofproductsandspeci));
           Assert.assertTrue(DIV_Text_V__Humanascomprehensivesuiteofproductsandspeci.isDisplayed(),"Element should exist");
-          System.out.println("Passed: Element should exist: 'DIV_Text_V__Humanaâ€™scomprehensivesuiteofproductsandspeci' = Is Displayed");
+          System.out.println("Passed: Element should exist: 'DIV_Text_V__Humana’scomprehensivesuiteofproductsandspeci' = Is Displayed");
           String stringValue_7 = DIV_Text_V__Humanascomprehensivesuiteofproductsandspeci.getText().trim();
-          Assert.assertEquals("Humanaâ€™s comprehensive suite of products and specialty programs allows you to wow your clients with customized solutions that will help keep your sales pipeline full." , stringValue_7);
-          System.out.println("Passed: Text matched: ('Humanaâ€™s comprehensive suite of products and specialty programs allows you to wow your clients with customized solutions that will help keep your sales pipeline full.')");
+          Assert.assertEquals("Humana’s comprehensive suite of products and specialty programs allows you to wow your clients with customized solutions that will help keep your sales pipeline full." , stringValue_7);
+          System.out.println("Passed: Text matched: ('Humana’s comprehensive suite of products and specialty programs allows you to wow your clients with customized solutions that will help keep your sales pipeline full.')");
           System.out.println("Passed: Test Step (7)");
 
  	//Test Step (8) - Verify Text - DIV_Text_V__Our focus on Medicare is second to none. At Humana, DIV

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="javalicious2.TestCase435">
+      <class name="Javalicious.TestConversion">
         <methods>
-          <include name="After"/>
           <include name="Before"/>
-          <include name="TestCase435"/>
+          <include name="TestCase795"/>
+          <include name="After"/>
         </methods>
-      </class> <!-- javalicious2.TestCase435 -->
+      </class> <!-- Javalicious.TestConversion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

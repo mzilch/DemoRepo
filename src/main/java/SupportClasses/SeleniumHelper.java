@@ -13,9 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import SupportClasses.TestBaseSetup;
 
-public class SeleniumHelper {
-	
-	
+public class SeleniumHelper {	
 	
 	public WebDriver driver = null;
 	public Actions builder = null;
@@ -28,25 +26,14 @@ public class SeleniumHelper {
 	public static final int WaitTime20 = 20;
 	public static final int WaitTime30 = 30;
 	public static final int WaitTime60 = 50;
-	//----------------------------------
-	public static ThreadLocal<WebDriverWait> Wait5 =  new ThreadLocal<WebDriverWait>();
-	public static ThreadLocal<WebDriverWait> Wait10 =  new ThreadLocal<WebDriverWait>();
-	public static ThreadLocal<WebDriverWait> Wait20 =  new ThreadLocal<WebDriverWait>();
-	public static ThreadLocal<WebDriverWait> Wait30 =  new ThreadLocal<WebDriverWait>();
-	public static ThreadLocal<WebDriverWait> Wait50 =  new ThreadLocal<WebDriverWait>();
+;
 	
 	public SeleniumHelper() throws MalformedURLException{
 		this.driver = TestBaseSetup.getDriver();
 		this.builder = TestBaseSetup.getBuilder();
 		this.wait = TestBaseSetup.getWait();
-		
-		
 	}
 	
-	
-
-
-
 	//Page Methods -------------------------------------------------------------------------
 	
 	public String getThisPageTitle() {
@@ -68,8 +55,7 @@ public class SeleniumHelper {
 				if(js.executeScript("return document.readystate").toString().equals("complete")){
 					break;
 				}
-			}
-			
+			}			
 		}
 	}
 	
@@ -103,83 +89,10 @@ public class SeleniumHelper {
 		} catch(StaleElementReferenceException sere){
 			click(InEllymont, "");
 		}
-	}
-	// Double Click
-	public void doubleClick(WebElement InEllymont){
-		
-		
-	}
-	
+	}	
 	// MouseOver
 	public void MouseOver(WebElement InEllymont){		
 		builder.moveToElement(InEllymont).perform();
-	}
-	
-	// Select
-	
-	public void selectByVisibleTest(WebElement InEllymont, String strText){
-		
-		
-	}
-	
-	
-	// Input
-	
-	
-	
-	// Text
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 
 }

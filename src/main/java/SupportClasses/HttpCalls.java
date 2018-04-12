@@ -21,15 +21,8 @@ package SupportClasses;
    
         urlHREF = In_WebElly.getAttribute("href");
             
-            //System.out.println(urlHREF);
-        
-/*            if(urlHREF == null || urlHREF.isEmpty()){
-            	System.out.println("URL is either not configured for anchor tag or it is empty");
+            //System.out.println(urlHREF);        
 
-            }
-            if(!urlHREF.startsWith(PageUrl)){
-                System.out.println("URL belongs to another domain, skipping it.");
-            }*/
             try {
                 huc = (HttpURLConnection)(new URL(urlHREF).openConnection());
                 
